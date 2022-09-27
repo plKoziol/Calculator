@@ -1,9 +1,9 @@
 package pl.koziol.calculator.repository;
 
-import com.plKoziol.applemarket.model.AppleBag;
 import org.springframework.data.jpa.repository.JpaRepository;
+import pl.koziol.calculator.model.MathOperation;
 
-public interface AppleBagRepository extends JpaRepository<AppleBag, Integer> {
 
-    Long countById(String id);
+public interface MathOperationRepository extends JpaRepository<MathOperation, String> {
+
 }

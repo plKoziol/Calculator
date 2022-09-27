@@ -13,7 +13,7 @@ public class SpringFoxConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.plKoziol.applemarket.rest"))
+                .apis(RequestHandlerSelectors.basePackage("pl.koziol.calculator.controller"))
                 .paths(PathSelectors.ant("/api/**"))
                 .build();
     }
